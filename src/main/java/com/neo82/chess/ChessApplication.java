@@ -16,7 +16,7 @@ public class ChessApplication implements WebMvcConfigurer {
 		SpringApplication.run(ChessApplication.class, args);
 	}
 
-	@GetMapping("/chess")
+	@GetMapping({"/chess", "/"})
 	public ModelAndView chess() {
 		return new ModelAndView("chess.html");
 	}
